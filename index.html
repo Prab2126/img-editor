@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo editor</title>
+<link rel="stylesheet" href="photoedit.css">
+</head>
+<body>
+    <main>
+<div id="floting-child">
+    <h2>online image editor</h2>
+    <nav class="customise">
+        <div class="changes">
+<h3>filters</h3>
+<div class="tools-button">
+
+<button class="filters-button brightness">brightness</button>
+<button class="filters-button contrast">contrast</button>
+<button class="filters-button grayscale">grayscale</button>
+<button class="filters-button hue-rotate">hue-rotate</button>
+<button class="filters-button saturate">saturate</button>
+<button class="filters-button opacity">opacity</button>
+<button class="filters-button blur">blur</button>
+
+</div>
+<div class="tools-advanced">
+    <div class="type-value">
+        <label for="range" class="range1">select filter</label>
+        <span class="firstSpan"></span>
+    </div>
+    <input id="range" value="0"  type="range" disabled>
+</div>
+
+<div class="rotate-flip">
+    <h4>rotate & flip</h4>
+
+    <div class="img-button-div">
+    <button class="left-rotate"><img src="IMG/rotate-left.png"></button>
+    <button class="right-rotate"><img src="IMG/rotate-left.png"></button>
+    <button class="x-mirror"><img src="IMG/flip.png"></button>
+    <button class="y-mirror"><img src="IMG/flip.png"></button>
+
+    </div>
+
+    </div>
+        </div>
+        <div class="preview">
+<input type="file" id="select-img" accept="image/*">
+
+<img>
+        </div>
+    </nav>
+    <footer class="footer-buttons">
+        <button id="reset">reset filters</button>
+        <a id="download-button"><button id="save">save image</button></a>
+    </footer>
+</div>
+    </main>
+    <script src="photoedit.js">
+    </script>
+</body>
+</html>
